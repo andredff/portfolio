@@ -1,0 +1,59 @@
+.background {
+  background: url(https://ricardovasconcelos.github.io/Portfolio/static/media/back.bb82ed2f.jpg);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 100vh;
+  width: 100%;
+  .description{
+    text-align: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.content{
+  min-height: 800px;
+  // background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // color: white;
+  text-align: center;
+  .photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 10em;
+    border: 5px solid #fff;
+    box-shadow: 1px 1px 20px 2px rgba(0,0,0,.158);
+  }
+  &-description{
+    margin-top: 20px;
+  }
+  &-cv{
+    .btn{
+      margin-top: 10px;
+      border: 0;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: #8167a9;
+      font-weight: bold;
+      color: #FFF;
+      cursor: pointer;
+      &:hover{
+        color: #FFF;
+        box-shadow: 1px 10px 20px 2px rgba(0,0,0,.158);
+
+      }
+    }
+  }
+
+  &-github{
+    color: #fff;
+  }
+}

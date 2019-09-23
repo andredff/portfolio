@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -8,6 +9,7 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './home/landing/landing.component';
 import { TerminalComponent } from './components/terminal/terminal.component';
 import { HeaderComponent } from './components/header/header.component';
+import { LandingService } from './services/landing.service';
 
 @NgModule({
   declarations: [
@@ -20,8 +22,9 @@ import { HeaderComponent } from './components/header/header.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(ROUTES),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [LandingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

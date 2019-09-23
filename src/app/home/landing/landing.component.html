@@ -1,2 +1,83 @@
-<!-- <app-terminal></app-terminal> -->
-<app-header></app-header>
+<!-- <app-header></app-header> -->
+
+<section>
+  <div class="background">
+    <div class="container">
+      <div class="description">
+        <div>
+          <div>
+            <h1>André Souza</h1>
+          </div>
+          <div>
+            <p>
+              Just a Front-End developer who tries to learn some stuff here and
+              there.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="content">
+  <div class="container">
+    <div class="about">
+      <p>Sobre Mim</p>
+    </div>
+    <div>
+      <img
+        class="photo"
+        src="https://media.licdn.com/dms/image/C4D03AQH60X58ZA6Puw/profile-displayphoto-shrink_200_200/0?e=1574899200&amp;v=beta&amp;t=GrrN1MIBRpvv8iOR9otrS-RWWNO4T3JC2GldPy0nYk0"
+        alt=""
+      />
+    </div>
+    <div class="content-description">
+      <p>
+        Desenvolvo sempre buscando fazer uso de boas práticas, tecnologias que
+        aumentem a eficiência do desenvolvimento com ganho de performance e
+        agilidade, código simples e de fácil manutenção. Tenho experiência com
+        Angular, HTML5, CSS3, SASS, TypeScript, JavaScript(ES6), layouts
+        responsivos, adaptáveis e mobile (cross-browser), Manipulação de objetos
+        com formato JSON, docker, Google Cloud e versionamento com Git.
+      </p>
+    </div>
+    <div class="content-cv">
+      <button class="btn">BAIXAR CURRÍCULO</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- <hr> -->
+<div class="content" style="background-color: #212121;">
+
+  <div class="container">
+    <div class="content-github">
+        <img src="../../../assets/github.png" height=80  alt="">
+        <p class="lead">
+            Eu coloquei alguns projetos que fiz no github, você pode ver um pouco aqui.</p>
+        <h1 class="display-4">Meu Github</h1>
+
+        <div class="jumbotron">
+
+          <img src="{{user?.avatar_url}}" height=80 alt="">
+          <h2>{{ user?.name }} </h2>
+          <p>{{ user?.bio }}</p>
+
+          <hr class="my-4">
+
+          <div style="color:#212121;height: 350px;
+          overflow: auto;">
+          <ul class="list-group" >
+              <li class="list-group-item" *ngFor="let repo of repos" style="margin: 10px;">
+                  <a [routerLink]="" target="_blank">{{ repo.name }}</a>
+                  <p>{{ repo.description }}</p>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
