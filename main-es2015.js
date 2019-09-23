@@ -654,7 +654,7 @@ let LandingService = class LandingService {
         /**
        * url do endpoint para listar usuario no GITHUB
        */
-        this.url = 'http://api.github.com';
+        this.url = 'https://api.github.com';
         this.user = 'andredff';
     }
     /**
